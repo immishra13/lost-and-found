@@ -32,6 +32,7 @@ const ItemCard = ({ item, isOwner, onDelete }) => {
                     <button 
                         onClick={() => onDelete(item.id)}
                         className="btn-ghost"
+                        aria-label="Delete item"
                         style={{ padding: '6px', color: 'var(--error)' }}
                     >
                         <Trash2 size={18} />
