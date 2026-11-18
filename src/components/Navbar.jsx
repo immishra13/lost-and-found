@@ -60,7 +60,7 @@ const Navbar = () => {
                                 <User size={18} color="var(--text-muted)" />
                                 <span style={{ fontSize: '0.9rem', fontWeight: '600' }}>{user.displayName || user.email.split('@')[0]}</span>
                             </div>
-                            <button onClick={handleLogout} className="btn-ghost" style={{ color: '#ef4444', padding: '8px' }}>
+                            <button onClick={handleLogout} className="btn-ghost" aria-label="Log out" style={{ color: '#ef4444', padding: '8px' }}>
                                 <LogOut size={20} />
                             </button>
                         </div>
